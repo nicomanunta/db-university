@@ -22,7 +22,13 @@ P.S. Ad ogni query fatta corrisponde un push.
 
 3. Selezionare tutti gli studenti che hanno più di 30 anni:
 
+
 4. Selezionare tutti i corsi del primo semestre del primo anno di un qualsiasi corso di laurea:
+
+    SELECT *
+    FROM `courses`
+    WHERE `period` = "I semestre"
+    AND `year` = 1;
 
 5. Selezionare tutti gli appelli di esame che avvengono nel pomeriggio (dopo le 14) del 20/06/2020:
 
