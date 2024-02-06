@@ -22,6 +22,9 @@ P.S. Ad ogni query fatta corrisponde un push.
 
 3. Selezionare tutti gli studenti che hanno più di 30 anni:
 
+    SELECT *
+    FROM `students`
+    WHERE TIMESTAMPDIFF(YEAR, date_of_birth, CURDATE()) > 30;
 
 4. Selezionare tutti i corsi del primo semestre del primo anno di un qualsiasi corso di laurea:
 
@@ -31,6 +34,11 @@ P.S. Ad ogni query fatta corrisponde un push.
     AND `year` = 1;
 
 5. Selezionare tutti gli appelli di esame che avvengono nel pomeriggio (dopo le 14) del 20/06/2020:
+
+    SELECT *
+    FROM `exams`
+    WHERE `date` = "2020-06-20"
+    AND HOUR(hour) >= 14;
 
 6. Selezionare tutti i corsi di laurea magistrale: 
 
