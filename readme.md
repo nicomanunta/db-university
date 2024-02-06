@@ -53,4 +53,8 @@ P.S. Ad ogni query fatta corrisponde un push.
 
 8. Quanti sono gli insegnanti che non hanno un numero di telefono:
 
+    SELECT COUNT(*) "Insegnati senza numero di cellulare" 
+    FROM `teachers`
+    WHERE `phone` IS NULL;
+
 
