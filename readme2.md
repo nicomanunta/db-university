@@ -32,6 +32,10 @@ QUERY CON GROUP BY:
 QUERY CON JOIN:
 1. Selezionare tutti gli studenti iscritti al corso di laurea di economia:
 
+    SELECT `students`.`name`, `students`.`surname`, `students`.`date_of_birth`
+    FROM `students`
+    JOIN `degrees`
+    ON `degrees`.`name` = "Corso di Laurea in Economia";
 
 2. Selezionare tutti i corsi di laurea magistrale del dipartimento di neuroscienze:
 
